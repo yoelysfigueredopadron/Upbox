@@ -1,0 +1,995 @@
+$myFont1: DM Sans;
+$myFont2: DM Serif Display;
+$myFont3: DM Serif Text;
+$myColor1: #000000;
+$myColor2: #EF8094;
+$myColor3: #FFFFFF;
+$myColor4: #F5F8FF;
+$myColor5: #C4C4C4;
+$myWidth: 100%;
+
+@mixin estilo-h2 {
+    text-align: center;
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: $myColor1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding-top: 90px;
+    width: $myWidth;
+}
+
+.topnav .icon {
+    display: none;
+  }
+
+.contenedor_header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    width: $myWidth;
+    top: 0px;
+    background-color: $myColor3;
+    padding: 5px;
+    z-index: 1000;
+    /* Se da estilo al nombre que acompaña al logo */
+    div p {
+        font-family: $myFont1;
+        font-weight: bold;
+        font-size: 28px; 
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.28em;
+    }
+}
+
+.Logo {
+    display: flex;
+    a{
+        display: flex;
+        margin-left: 40px;
+        text-decoration: none;
+        line-height: 18px;
+        height: 56px;
+    }
+    p{
+        margin-left: 16px;
+        margin-top: 14px;
+    }
+    a img {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+.contenedor_main {
+    background-color: $myColor4;
+    padding-left: 40px;
+    width: $myWidth;
+    h1 {
+        font-family: $myFont2;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        color: $myColor1;
+        width: auto;
+    }
+}
+
+.section_one p {
+    width: auto;
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: $myColor1;
+}
+
+/* Se crea el CTA principal */
+.btn_principal {
+    width: auto;
+    height: 59px;
+    background: $myColor3;
+    border: 4px solid $myColor2;
+    border-radius: 300px;
+    color: $myColor1;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+}
+
+.btn_secundario {
+    margin-top: 50px;
+    width: auto;
+    height: 59px;
+    background: $myColor3;
+    border: 4px solid $myColor2;
+    border-radius: 300px;
+    color: $myColor1;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+}
+
+.section_one {
+    background-color: $myColor4;
+    display:flex;
+    img {
+        width: $myWidth;
+    }
+}
+
+.cards {
+    border: 2px solid $myColor5;
+    border-radius: 6px;
+    display: grid;
+    justify-items: center;
+    width: 575px;
+    height: 291px;
+    h3 {
+        text-align: center;
+        color: $myColor1;
+        font-family: $myFont3;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+     }
+    p {
+        text-align: center;
+        font-family: $myFont1;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        letter-spacing: 0.12em;
+        margin: -20px;
+     }
+ }
+
+ .contenedor-cards {
+    display: flex;
+    justify-content:space-around;
+ }
+
+ .section_two {
+     height: auto;
+ }
+
+ h2 {
+    @include estilo-h2;
+ }
+
+ #titulo_final {
+     padding-top: 40px;
+ }
+
+/* Se crea el botón secundario */
+ .btn_secondary{
+    height: 52px;
+    background: $myColor2;
+    border: 4px solid $myColor2;
+    border-radius: 300px;
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 0.12em;
+    color: $myColor3;
+    padding: 12px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.texto_secondary{
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    color: $myColor1;
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section_three{
+    width: $myWidth;
+}
+
+.servicios h3{
+    font-family: $myFont3;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: $myColor1;
+    margin: 40px;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.servicios p{
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    color: $myColor1;
+    margin-left: 40px;
+}
+
+.contenedor_servicios_uno{
+    display: flex;
+    justify-content: space-around;
+    width: 323px;
+    height: 390px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#margin_title {
+    margin-top: -70px;
+}
+
+
+.contenedor_servicios_dos img {
+     display: block; 
+     margin-left: auto; 
+     margin-right: auto; 
+}
+
+.servicios_dos h3{
+font-family: $myFont3;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+color: $myColor1;
+text-align: center;
+margin-top: -65px;
+}
+
+.servicios_dos p{
+    width: 465px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    color: $myColor1;
+}
+
+#alinear_btn{
+    text-align: center;
+}
+
+.section_four{
+    background-color: $myColor4;
+}
+
+.redes_sociales{
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    color: $myColor1;
+    width: 312px;
+}
+
+.redes_fotos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor_redes{
+    padding-right: 20px;
+    text-align: center;
+}
+
+#alinear_btnsecondary{
+    text-align: center;
+}
+
+footer{
+    background-color: $myColor3;
+}
+
+.container_footer_all{
+    width: $myWidth;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container_body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna_1{
+    max-width: 400px;
+    h3{
+        font-family: $myFont1;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.12em;
+        color: $myColor1;
+    }
+    p{
+        font-family: $myFont1;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.12em;
+        color: $myColor1;
+        margin-top: 20px;
+    }
+}
+
+.columna_2{
+    max-width: 400px;
+    h3{
+        font-family: $myFont1;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.12em;
+        color: $myColor1;
+    }
+}
+
+.row-f{
+    margin-top: 20px;
+    display: flex;
+    img{
+        width: 26px;
+        height: 26px;
+    }
+    p{
+        margin-top: 10px;
+        margin-left: 20px;
+        font-family: $myFont1;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.12em;
+        color: $myColor1;
+    }
+}
+
+.columna_3{
+    max-width: 400px;
+    h3{
+        font-family: $myFont1;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.12em;
+        color: $myColor1;
+    }
+}
+
+.fila{
+    margin-top: 20px;
+    display: flex;
+    img{
+        width: 26px;
+        height: 26px;
+    }
+    p{
+        margin-left: 20px;
+        margin-top: 10px;
+        max-width: 165px;
+    }
+}
+
+.container_footer{
+    width: $myWidth;
+    border-top: 2px solid $myColor5;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.copyright{
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    color: $myColor1;
+}
+
+.information a{
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    color: $myColor1;
+}
+
+.grid_lanzamientos{
+    display: grid;
+    grid-template-areas: 
+        "titulo titulo titulo"
+        "producto1 producto2 producto3"
+        "producto4 producto5 producto6"
+        "producto7 producto8 producto9";
+    grid-template-columns: repeat(auto);
+    grid-template-rows: repeat(auto);
+    grid-column-gap: 3px;
+    grid-row-gap: 5px;
+    justify-items: center;
+    h1{
+        font-family: $myFont2;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 56px;
+        color: $myColor1;
+        text-decoration: underline;
+    }
+}
+
+.title_lanzamientos{
+    grid-area: titulo
+}
+
+.card_hover:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.text_style{
+    font-family: $myFont3;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 49px;
+    text-align: center;
+    color: $myColor1;
+}
+
+.producto1{
+    grid-area: producto1;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: $myColor4;
+}
+
+.producto2{
+    grid-area: producto2;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: $myColor4;
+}
+
+.producto3{
+    grid-area: producto3;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: $myColor4;
+}
+
+.producto4{
+    grid-area: producto4;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: $myColor4;
+}
+
+.producto5{
+    grid-area: producto5;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: $myColor4;
+}
+
+.producto6{
+    grid-area: producto6;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: $myColor4;
+}
+
+.producto7{
+    grid-area: producto7;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: $myColor4;
+}
+
+.producto8{
+    grid-area: producto8;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: $myColor4;
+}
+
+.producto9{
+    grid-area: producto9;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: $myColor4;
+}
+
+.grid_form{
+    display: grid;
+    grid-template-areas: 
+        "titulo titulo titulo"
+        "campo1 . ."
+        "campo2 . ."
+        "campo3 . ."
+        "campo4 . ."
+        "campo5 . ."
+        "btnform . .";
+    grid-template-columns: repeat(auto);
+    grid-template-rows: repeat(auto);
+    grid-column-gap: 3px;
+    grid-row-gap: 5px;
+    justify-items: center;
+    h1{
+        font-family: $myFont2;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 56px;
+        color: $myColor1;
+        text-decoration: underline;
+    }
+}
+
+.title_form{
+    grid-area: titulo;
+}
+
+.campo1{
+    grid-area: campo1;
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: $myColor1;
+}
+
+.campo2{
+    grid-area: campo2;
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: $myColor1;
+}
+
+.campo3{
+    grid-area: campo3;
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: $myColor1;
+}
+
+.campo4{
+    grid-area: campo4;
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: $myColor1;
+}
+
+.campo5{
+    grid-area: campo5;
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: $myColor1;
+}
+
+.btnform{
+    grid-area: btnform;
+    background: $myColor2;
+    width: 120px;
+    height: 32px;
+    border-radius: 4px;
+    font-family: $myFont1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: $myColor3;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+        padding-right: 30px; 
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav a {
+        padding: 0px;
+        padding-right: 16px;
+      }
+
+    .contenedor_header div p {
+        font-family: $myFont1;
+        font-weight: bold;
+        font-size: 1em; 
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 0px;
+        padding-top: 20px;
+        padding-left: 14px;
+    }
+
+    .section_three{
+        width: $myWidth;
+    }
+
+    .servicios_dos {
+        width: $myWidth;
+    }
+
+    .servicios_dos p{
+        width: $myWidth;
+    }
+
+    .ancho {
+        width: 360px;
+        margin-right: 0px;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topnav a {
+        font-size: 0.75em;
+      }
+
+    .right {
+        padding-top: 20px;
+    }
+
+    .cards {
+        width: $myWidth;
+     }
+    
+    .texto_secondary {
+        padding-top: 0px;
+    }
+    
+  }
+
+@media only screen and (max-width: 900px){
+    .section_one{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contenedor-cards {
+        flex-direction: column;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .section_two {
+        height: 815px;
+    }
+
+    .cards {
+        margin: 15px auto;
+    }
+
+    #alinear_btn {
+        padding-top: 75px;
+    }
+
+    .texto_secondary {
+        margin-top: 0px;
+    }
+
+    .redes_fotos {
+        flex-direction: column;
+    }
+
+    .contenedor_servicios_uno {
+        flex-direction: column;
+        padding-top: 70px;
+        width: 328px;
+        height: 511px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .contenedor_servicios_dos {
+        flex-direction: column;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    #margin_title {
+        padding-top: 200px;
+        margin-top: 0;
+    }
+
+    .servicios p {
+        width: 281px;
+        height: 159px;
+        left: 35px;
+        top: 555px;
+    }
+
+    .redes_sociales {
+        margin: 0px auto;
+    }
+
+    .grid_lanzamientos{
+        grid-template-areas: 
+            "titulo titulo titulo"
+            ". producto1 ." 
+            ". producto2 ." 
+            ". producto3 ."
+            ". producto4 ." 
+            ". producto5 ." 
+            ". producto6 ."
+            ". producto7 ." 
+            ". producto8 ." 
+            ". producto9 .";
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .container_body {
+        flex-wrap: wrap;
+    }
+    .columna_2, .columna_3 {
+        margin-top: 40px;
+    }
+    .columna_1 {
+        max-width: $myWidth;
+    }
+}
+
+/* nuevos estilos */
+ul.topnav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li a.link {
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin-top: unset;
+  }
+  
+ul.topnav li a.active, ul.topnav li a.link:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    transition: all 1s;
+    color: $myColor2;
+}
+
+/***************** menu animado con un checkbox ************************/
+#contenedor-menu {
+    display: none; /* cambiar de none a flex*/
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    height: 38px;
+    padding: 0px 2px 0 2px;
+}
+  
+.label-menu {
+    width: 32px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+  
+#spn1, #spn2, #spn3 {
+    position: absolute;
+    content: '';
+    height: 4px;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+  
+#spn1 {
+    background: $myColor2;
+    width: 30px;
+}
+  
+#spn2 {
+    background: $myColor2;
+    top: 10px;
+    width: 30px;
+}
+  
+#spn3 {
+    background: $myColor2;
+    top: 20px;
+    width: 15px;
+}
+  
+#btn-menu {
+    display: none;
+}
+  
+#btn-menu:checked ~ .label-menu #spn1 {
+    transform: rotate(140deg);
+    top: 10px;
+    width: 25px;
+}
+  
+#btn-menu:checked ~ .label-menu #spn2 {
+    opacity: 0;
+}
+  
+#btn-menu:checked ~ .label-menu #spn3 {
+    transform: rotate(-140deg);
+    top: 10px;
+    width: 25px;
+}
+  
+#texto-menu {
+    color: #b8b6b6;
+    font-size: 23px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+ /************************** Media Queries ********************/
+@media screen and (max-width: 480px) {
+    nav {
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        display: none;
+    }
+
+    #menu {
+        flex-direction: column;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    nav ul li {
+        width: 155px;
+        text-align: right;
+    }
+
+    #contenedor-menu {
+        display: flex;
+    }
+
+    .contenedor_main h1 {
+        font-size: 36px;
+    }
+}
